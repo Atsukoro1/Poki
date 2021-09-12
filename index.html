@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Poki | Type speed tester</title>
+</head>
+
+<body class="dark">
+    <nav class="dark">
+        <a id="brand" href="/"><span id="brand-icon" class="dark"><i class="fas fa-pencil-alt fa-1.5x"></i></span> Poki</a>
+
+        <div id="nav-right">
+            <a>
+                <button class="dark" id="dark-mode-control"><i class="fas fa-moon"></i></button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="dark" id="stats-container">
+        <div class="dark" id="stats">
+            <label aria-controls="mistakes" class="dark" id="value">0</label>
+            <p class="dark" id="value-title">Mistakes</p>
+        </div>
+
+        <div class="dark" id="stats">
+            <label aria-controls="total" class="dark" id="value">0</label>
+            <p class="dark" id="value-title">Total</p>
+        </div>
+
+        <div class="dark" id="stats">
+            <label aria-controls="bpm" class="dark" id="value">0</label>
+            <p class="dark" id="value-title">BPM</p>
+        </div>
+    </div>
+
+    <div id="words" class="dark">
+        <label class="dark" id="doneTyping">
+
+        </label>
+
+        <label class="dark" id="toType">
+
+        </label>
+    </div>
+
+    <input multiple type="file" src="./wordlist.txt" style="display: none;" id="wordlist">
+    <script src="./typeControl.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
