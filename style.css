@@ -5,6 +5,16 @@
 
 /* Main styles */
 
+#lastStatsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
 nav #brand {
     margin-top: 4.5px;
 }
@@ -62,6 +72,10 @@ nav a {
     border-radius: 12px;
 }
 
+.icon {
+    color: #6366f1;
+}
+
 #value {
     font-family: Toru;
     font-size: 70px;
@@ -79,7 +93,9 @@ nav a {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 700px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
     text-align: center;
 }
 
@@ -141,8 +157,30 @@ nav[class="dark"] a {
     background-color: #374151;
 }
 
-/* Light mode */
+#lastStatsContainer {
+    padding: 10px;
+    border-radius: 12px;
+}
 
+body[class="dark"] #lastStatsContainer {
+    background-color: #374151;
+}
+
+body[class="dark"] #lastStatsContainer div label {
+    color: #9ca3af;
+    font-family: Toru;
+}
+
+body[class="light"] #lastStatsContainer div label {
+    color: #6b7280;
+    font-family: Toru;
+}
+
+body[class="light"] #lastStatsContainer {
+    background-color: #e5e7eb;
+}
+
+/* Light mode */
 body[class="light"] {
     background-color: #F3F4F6;
 }

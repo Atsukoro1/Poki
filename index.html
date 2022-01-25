@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Poki | Type speed tester</title>
+    <title>Type speed tester</title>
 </head>
 
 <body class="dark">
@@ -22,6 +22,25 @@
             </a>
         </div>
     </nav>
+
+    <div id="lastStatsContainer">
+        <div class="grid">
+            <span class="icon">
+                <i class="fas fa-calendar-week"></i>
+            </span>
+            
+            &nbsp;
+
+            <b><label id="title">Last stats</label></b>
+        </div>
+        <div class="grid">
+            <label>WPM</h2>
+            <label id="wpm">0</label>
+            |
+            <label>Mistakes</label>
+            <label id="mistakes">0</label>
+        </div>
+    </div>
 
     <div class="dark" id="stats-container">
         <div class="dark" id="stats">
@@ -36,7 +55,7 @@
 
         <div class="dark" id="stats">
             <label aria-controls="bpm" class="dark" id="value">0</label>
-            <p class="dark" id="value-title">BPM</p>
+            <p class="dark" id="value-title">WPM</p>
         </div>
     </div>
 
@@ -51,7 +70,7 @@
     </div>
 
     <input multiple type="file" src="./wordlist.txt" style="display: none;" id="wordlist">
-    <script src="./typeControl.js" crossorigin="anonymous"></script>
+    <script type="module" src="./modules/typeControl.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
